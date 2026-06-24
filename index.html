@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lucas - Premium Personal Portfolio. Modern Web Developer & UI Designer showcasing innovative projects.">
+    <title>Lucas | Creative Developer & Designer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Background Glows -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>LucasChan<span class="logo-accent"> &gt;</span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <a href="#contact" class="btn btn-primary nav-btn">Hire Me</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span class="pulse-dot"></span>
+                        Available for freelance & full-time roles
+                    </div>
+                    <h1 class="hero-title">
+                        Building Digital <br>
+                        <span class="gradient-text">Experiences</span> That Matter
+                    </h1>
+                    <p class="hero-subtitle">
+                        Hi, I'm Lucas. I design and build high-performance, beautiful web applications with clean code and modern aesthetics.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Exp</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-glow"></div>
+                        <img src="LucasJessie.jpeg" alt="Lucas Avatar" class="avatar-img" id="avatarImage">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Skills Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">My Skills & Expertise</h2>
+                    <p class="section-desc">Here are the technologies and tools I specialize in to bring modern, responsive designs to life.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text-card glass-card">
+                        <h3>My Journey</h3>
+                        <p>I am a passionate frontend developer and UI/UX designer. I thrive at the intersection of design and technology, creating products that are not only visually stunning but also highly functional and user-friendly.</p>
+                        <p>My workflow focuses on pixel-perfect implementations, clean architectures, and seamless responsive design that works beautifully across all devices.</p>
+                    </div>
+
+                    <div class="skills-container">
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon-box purple-glow">
+                                <i data-lucide="code-2"></i>
+                            </div>
+                            <h4>Frontend Development</h4>
+                            <p>HTML5, CSS3, JS (ES6+), React, Vue.js, TailwindCSS</p>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon-box blue-glow">
+                                <i data-lucide="palette"></i>
+                            </div>
+                            <h4>UI/UX Design</h4>
+                            <p>Figma, Adobe XD, Wireframing, Prototyping, Design Systems</p>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon-box cyan-glow">
+                                <i data-lucide="zap"></i>
+                            </div>
+                            <h4>Performance & SEO</h4>
+                            <p>Semantic HTML, PageSpeed Optimization, Accessibility, Core Web Vitals</p>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-icon-box green-glow">
+                                <i data-lucide="git-branch"></i>
+                            </div>
+                            <h4>Workflow & Tools</h4>
+                            <p>Git, GitHub, VS Code, Webpack, Vite, Command Line</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Showcase</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-desc">A curated selection of digital solutions I've developed, combining state-of-the-art designs with reliable code.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card glass-card">
+                        <div class="project-img-wrapper">
+                            <img src="project1.png" alt="Aesthetic E-commerce Platform" class="project-img">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link-btn" aria-label="View Project Live">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">E-Commerce</span>
+                            <h3 class="project-title">Aura Modern Boutique</h3>
+                            <p class="project-description">A high-end, responsive e-commerce application featuring glassmorphic UI, custom carts, and lightning-fast transitions.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>CSS Variables</span>
+                                <span>Vite</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card glass-card">
+                        <div class="project-img-wrapper">
+                            <img src="project2.png" alt="SaaS Analytics Dashboard" class="project-img">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link-btn" aria-label="View Project Live">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">SaaS / Web App</span>
+                            <h3 class="project-title">Apex Analytics Dashboard</h3>
+                            <p class="project-description">A responsive data analytics platform visualizing complex user metrics with gorgeous, custom interactive CSS charts.</p>
+                            <div class="project-tech">
+                                <span>Vanilla JS</span>
+                                <span>CSS Grid</span>
+                                <span>SVG Charts</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card glass-card">
+                        <div class="project-img-wrapper">
+                            <img src="project3.png" alt="Creative Agency Portfolio" class="project-img">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link-btn" aria-label="View Project Live">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Agency Portfolio</span>
+                            <h3 class="project-title">Nexus Design Studio</h3>
+                            <p class="project-description">A highly interactive portfolio site built for a top-tier creative studio, featuring complex scroll-triggered micro-animations.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS Keyframes</span>
+                                <span>JS Animations</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <span class="section-tag">Get in Touch</span>
+                        <h2 class="section-title">Let's Create Something <span class="gradient-text">Amazing</span> Together</h2>
+                        <p class="contact-desc">Have a project in mind, looking for a developer, or just want to say hello? Drop me a message and I'll get back to you as soon as possible.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact-method-detail">
+                                    <span class="contact-label">Email Me</span>
+                                    <a href="mailto:lucas@example.com" class="contact-link">lucas@example.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="contact-method-detail">
+                                    <span class="contact-label">Location</span>
+                                    <span class="contact-link">Shanghai, China</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper glass-card">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="formName">Full Name</label>
+                                <input type="text" id="formName" name="name" placeholder="John Doe" required autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="formEmail">Email Address</label>
+                                <input type="email" id="formEmail" name="email" placeholder="john@example.com" required autocomplete="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="formMessage">Message</label>
+                                <textarea id="formMessage" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                                <span>Send Message</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                            <div class="form-status" id="formStatus"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bottom">
+        <div class="container footer-container">
+            <p>&copy; 2026 Lucas. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle -->
+    <script src="app.js"></script>
+</body>
+</html>
