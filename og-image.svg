@@ -22,7 +22,7 @@
 
   <!-- Logo bracket -->
   <text x="600" y="280" font-family="Outfit, 'Segoe UI', system-ui, sans-serif" font-size="96" font-weight="700" fill="white" text-anchor="middle">
-    <tspan fill="#e63e5e" font-weight="600">&lt;</tspan>LucasChan<tspan fill="#e63e5e" font-weight="600"> /&gt;</tspan>
+    <tspan fill="#e63e5e" font-weight="600">&lt;</tspan>LucasChanPortfolio<tspan fill="#e63e5e" font-weight="600">&gt;</tspan>
   </text>
 
   <!-- Divider line -->

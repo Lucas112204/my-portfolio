@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" width="400" height="80">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 80" width="600" height="80">
   <defs>
     <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#e86d1f"/>
@@ -6,6 +6,6 @@
     </linearGradient>
   </defs>
   <text x="0" y="58" font-family="Outfit, 'Segoe UI', system-ui, sans-serif" font-size="48" font-weight="700" fill="white">
-    <tspan fill="#e63e5e" font-weight="600">&lt;</tspan>LucasChan<tspan fill="#e63e5e" font-weight="600"> /&gt;</tspan>
+    <tspan fill="#e63e5e" font-weight="600">&lt;</tspan>LucasChanPortfolio<tspan fill="#e63e5e" font-weight="600">&gt;</tspan>
   </text>
 </svg>
