@@ -228,6 +228,10 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    display: inline-block;
+    min-width: 1.6em;
+    text-align: left;
+    vertical-align: bottom;
 }
 
 /* ==========================================================================
@@ -389,6 +393,8 @@ body {
     font-weight: 800;
     letter-spacing: -1px;
     margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .hero-subtitle {
