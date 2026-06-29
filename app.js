@@ -71,7 +71,7 @@ function initTypingEffect() {
     const textSpan = document.querySelector('.hero-title .gradient-text');
     if (!textSpan) return;
 
-    const words = ["Experiences", "Interfaces", "Applications", "Solutions"];
+    const words = ["Build", "Ship", "Create", "Code"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -136,43 +136,64 @@ function initActiveLinks() {
 }
 
 /* ==========================================================================
-   Mock Contact Form Submission
+   Contact Form Submission (Web3Forms)
    ========================================================================== */
 function initContactForm() {
     const form = document.getElementById('contactForm');
     const submitBtn = document.getElementById('submitBtn');
     const formStatus = document.getElementById('formStatus');
-    
+
     if (form && submitBtn && formStatus) {
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
+
+            // Check if access key is configured
+            const accessKey = form.querySelector('input[name="access_key"]').value;
+            if (accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+                formStatus.className = 'form-status error';
+                formStatus.textContent = '⚠️ Contact form not yet configured. Please set up your Web3Forms access key.';
+                return;
+            }
+
             // UI state updates
             submitBtn.disabled = true;
             const btnText = submitBtn.querySelector('span');
             const originalText = btnText.textContent;
             btnText.textContent = "Sending...";
-            
+
             formStatus.className = "form-status";
             formStatus.textContent = "";
 
-            // Mock API network call
-            setTimeout(() => {
+            try {
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+
                 submitBtn.disabled = false;
                 btnText.textContent = originalText;
-                
-                // Form response success mockup
-                formStatus.classList.add('success');
-                formStatus.textContent = "Message sent! I'll get back to you shortly.";
-                
-                form.reset();
-                
-                // Clear success message after 5 seconds
-                setTimeout(() => {
-                    formStatus.textContent = "";
-                    formStatus.className = "form-status";
-                }, 5000);
-            }, 1500);
+
+                if (data.success) {
+                    formStatus.classList.add('success');
+                    formStatus.textContent = "Message sent! I'll get back to you shortly.";
+                    form.reset();
+                } else {
+                    throw new Error(data.message || 'Submission failed');
+                }
+            } catch (error) {
+                submitBtn.disabled = false;
+                btnText.textContent = originalText;
+                formStatus.classList.add('error');
+                formStatus.textContent = "Something went wrong. Please email me directly at Lucaschan2004@gmail.com";
+            }
+
+            // Clear status message after 8 seconds
+            setTimeout(() => {
+                formStatus.textContent = "";
+                formStatus.className = "form-status";
+            }, 8000);
         });
     }
 }
