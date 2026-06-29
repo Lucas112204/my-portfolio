@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e86d1f"/>
+      <stop offset="100%" stop-color="#e63e5e"/>
+    </linearGradient>
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e86d1f"/>
+      <stop offset="100%" stop-color="#e63e5e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)" rx="0"/>
+
+  <!-- Subtle glow behind logo -->
+  <ellipse cx="600" cy="260" rx="400" ry="80" fill="hsla(24, 95%, 55%, 0.08)" filter="blur(40px)"/>
+
+  <!-- Logo bracket -->
+  <text x="600" y="280" font-family="Outfit, 'Segoe UI', system-ui, sans-serif" font-size="96" font-weight="700" fill="white" text-anchor="middle">
+    <tspan fill="#e63e5e" font-weight="600">&lt;</tspan>LucasChan<tspan fill="#e63e5e" font-weight="600"> /&gt;</tspan>
+  </text>
+
+  <!-- Divider line -->
+  <line x1="440" y1="320" x2="760" y2="320" stroke="url(#lineGradient)" stroke-width="2" opacity="0.5"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="380" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="28" font-weight="400" fill="#8b949e" text-anchor="middle">
+    IT Graduate &amp; Builder — Software Development · IT Support · QA
+  </text>
+
+  <!-- Bottom tagline -->
+  <text x="600" y="520" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="400" fill="#6e7681" text-anchor="middle">
+    Kuala Lumpur, Malaysia · 4 Languages · Python · REST APIs · Git · AI-assisted Dev
+  </text>
+</svg>

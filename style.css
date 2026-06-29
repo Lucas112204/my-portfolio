@@ -277,6 +277,12 @@ body {
     align-items: center;
 }
 
+.logo-img {
+    height: 2.2rem;
+    width: auto;
+    display: block;
+}
+
 .logo-accent {
     color: var(--secondary);
     font-weight: 600;
